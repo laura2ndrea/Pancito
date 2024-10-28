@@ -1,4 +1,4 @@
-USE pancito; 
+USE Pancito; 
 
 SHOW TRIGGERS; 
 
@@ -42,3 +42,5 @@ SET precio_venta = 3000.00
 WHERE id = 2; 
 DROP TRIGGER registroProductos; 
 SELECT * FROM ModificacionesProductos; 
+
+
