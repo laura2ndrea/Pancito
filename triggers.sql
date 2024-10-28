@@ -21,3 +21,24 @@ SELECT *
 FROM Ventas;  
 
 INSERT INTO Ventas (cantidad, id_producto, id_factura) VALUES (5, 13, 5);
+
+-- 2. Registrar en una tabla de auditoría cualquier modificación en los productos.
+CREATE TABLE IF NOT EXISTS ModificacionesProductos (
+	fecha DATETIME NOT NULL, 
+    mensaje VARCHAR(200)
+);
+
+DELIMITER $
+CREATE TRIGGER registroProductos
+AFTER UPDATE ON Productos FOR EACH ROW
+BEGIN 
+	INSERT INTO ModificacionesProductos (fecha, mensaje)
+    VALUES (NOW(), CONCAT('El producto ', NEW.nombre, ' ha sido modificado')); 
+END $
+DELIMITER ; 
+
+UPDATE Productos 
+SET precio_venta = 3000.00
+WHERE id = 2; 
+DROP TRIGGER registroProductos; 
+SELECT * FROM ModificacionesProductos; 
