@@ -1,4 +1,4 @@
-USE pancito; 
+USE Pancito; 
 
 -- 1. Calcular el costo total de los ingredientes utilizados en un producto.
 DELIMITER $
@@ -19,7 +19,7 @@ BEGIN
 END $
 DELIMITER ; 
 
-SELECT calcularCosto(1) AS 'Costo del producto'; 
+SELECT p.nombre, calcularCosto(p.id) AS 'Costo del producto' FROM Productos p; 
 
 -- 2. Devolver el precio promedio de los productos vendidos.
 DELIMITER $
@@ -34,3 +34,23 @@ END $
 DELIMITER ; 
 
 SELECT promedioProductos() AS 'Precio promedio de los productos'; 
+
+-- 3. Calcular el costo total de una venta.
+DELIMITER $ 
+CREATE FUNCTION costoVenta (idFactura INT)
+RETURNS DECIMAL (10,2)
+DETERMINISTIC
+BEGIN
+	DECLARE total DECIMAL(10,2);
+    
+    SELECT SUM(p.precio_venta) INTO total
+    FROM Productos p
+    JOIN Ventas v ON p.id = v.id_producto
+    JOIN Facturas f ON v.id_factura = f.id
+    WHERE f.id = idFactura; 
+    
+    RETURN total; 
+END $ 
+DELIMITER ; 
+
+SELECT costoVenta(1) AS 'Total de la venta'; 
