@@ -624,7 +624,7 @@
 							"left": 240,
 							"top": 72,
 							"width": 180.947265625,
-							"height": 76,
+							"height": 80,
 							"nameLabel": {
 								"$ref": "AAAAAAGSzvru012Vf6A="
 							},
@@ -1131,7 +1131,7 @@
 										"$ref": "AAAAAAGSzv0tEF3VWlY="
 									},
 									"font": "Arial;13;1",
-									"left": 88,
+									"left": 96,
 									"top": 773,
 									"width": 194.4423828125,
 									"height": 13,
@@ -1157,7 +1157,7 @@
 												"$ref": "AAAAAAGSzxJkSmDD8eo="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
+											"left": 101,
 											"top": 796,
 											"width": 184.4423828125,
 											"height": 13
@@ -1172,21 +1172,21 @@
 												"$ref": "AAAAAAGSzxJsSWDKoSE="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
+											"left": 101,
 											"top": 811,
 											"width": 184.4423828125,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 88,
+									"left": 96,
 									"top": 791,
 									"width": 194.4423828125,
 									"height": 38
 								}
 							],
 							"font": "Arial;13;0",
-							"left": 88,
+							"left": 96,
 							"top": 768,
 							"width": 194.4423828125,
 							"height": 80,
@@ -1553,7 +1553,7 @@
 										"$ref": "AAAAAAGSzv/4Zl4df1U="
 									},
 									"font": "Arial;13;1",
-									"left": 1904,
+									"left": 1896,
 									"top": 165,
 									"width": 204.56689453125,
 									"height": 13,
@@ -1579,7 +1579,7 @@
 												"$ref": "AAAAAAGSzxqc12HN0og="
 											},
 											"font": "Arial;13;0",
-											"left": 1909,
+											"left": 1901,
 											"top": 188,
 											"width": 194.56689453125,
 											"height": 13
@@ -1594,7 +1594,7 @@
 												"$ref": "AAAAAAGSzxqk0mHUtO8="
 											},
 											"font": "Arial;13;0",
-											"left": 1909,
+											"left": 1901,
 											"top": 203,
 											"width": 194.56689453125,
 											"height": 13
@@ -1609,21 +1609,21 @@
 												"$ref": "AAAAAAGSzxqr8GHbQ44="
 											},
 											"font": "Arial;13;0",
-											"left": 1909,
+											"left": 1901,
 											"top": 218,
 											"width": 194.56689453125,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1904,
+									"left": 1896,
 									"top": 183,
 									"width": 204.56689453125,
 									"height": 53
 								}
 							],
 							"font": "Arial;13;0",
-							"left": 1904,
+							"left": 1896,
 							"top": 160,
 							"width": 204.56689453125,
 							"height": 80,
@@ -2077,7 +2077,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 313,
-									"top": 167,
+									"top": 171,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -2094,7 +2094,7 @@
 								"$ref": "AAAAAAGSzvsLSF2h/aU="
 							},
 							"lineStyle": 2,
-							"points": "416:328;328:328;328:148",
+							"points": "416:328;328:328;328:152",
 							"nameLabel": {
 								"$ref": "AAAAAAGS3j24sth2TcA="
 							},
@@ -3662,34 +3662,6 @@
 						},
 						{
 							"_type": "ERDRelationship",
-							"_id": "AAAAAAGSzwjv0V9keqM=",
-							"_parent": {
-								"$ref": "AAAAAAGSzvMw81w/E1c="
-							},
-							"end1": {
-								"_type": "ERDRelationshipEnd",
-								"_id": "AAAAAAGSzwjv0V9l79I=",
-								"_parent": {
-									"$ref": "AAAAAAGSzwjv0V9keqM="
-								},
-								"reference": {
-									"$ref": "AAAAAAGSzvMw81w/E1c="
-								}
-							},
-							"end2": {
-								"_type": "ERDRelationshipEnd",
-								"_id": "AAAAAAGSzwjv0V9mZwc=",
-								"_parent": {
-									"$ref": "AAAAAAGSzwjv0V9keqM="
-								},
-								"reference": {
-									"$ref": "AAAAAAGSzwdZlV8a54I="
-								},
-								"cardinality": "0..*"
-							}
-						},
-						{
-							"_type": "ERDRelationship",
 							"_id": "AAAAAAGS3kE1MtkBMKA=",
 							"_parent": {
 								"$ref": "AAAAAAGSzvMw81w/E1c="
@@ -5105,180 +5077,6 @@
 				},
 				{
 					"_type": "ERDEntity",
-					"_id": "AAAAAAGSzwdZlV8a54I=",
-					"_parent": {
-						"$ref": "AAAAAAGSzumoVltvXZU="
-					},
-					"name": "Ingredientes_Presentaciones",
-					"ownedElements": [
-						{
-							"_type": "ERDRelationship",
-							"_id": "AAAAAAGSzwkDmF949BI=",
-							"_parent": {
-								"$ref": "AAAAAAGSzwdZlV8a54I="
-							},
-							"end1": {
-								"_type": "ERDRelationshipEnd",
-								"_id": "AAAAAAGSzwkDmF95M7Q=",
-								"_parent": {
-									"$ref": "AAAAAAGSzwkDmF949BI="
-								},
-								"reference": {
-									"$ref": "AAAAAAGSzwdZlV8a54I="
-								}
-							},
-							"end2": {
-								"_type": "ERDRelationshipEnd",
-								"_id": "AAAAAAGSzwkDmF968VU=",
-								"_parent": {
-									"$ref": "AAAAAAGSzwkDmF949BI="
-								},
-								"reference": {
-									"$ref": "AAAAAAGSzwiv919HEOc="
-								},
-								"cardinality": "0..*"
-							}
-						},
-						{
-							"_type": "ERDRelationship",
-							"_id": "AAAAAAGSzyTuVWI1gRo=",
-							"_parent": {
-								"$ref": "AAAAAAGSzwdZlV8a54I="
-							},
-							"end1": {
-								"_type": "ERDRelationshipEnd",
-								"_id": "AAAAAAGSzyTuVWI2GUA=",
-								"_parent": {
-									"$ref": "AAAAAAGSzyTuVWI1gRo="
-								},
-								"reference": {
-									"$ref": "AAAAAAGSzwdZlV8a54I="
-								}
-							},
-							"end2": {
-								"_type": "ERDRelationshipEnd",
-								"_id": "AAAAAAGSzyTuVWI3QHo=",
-								"_parent": {
-									"$ref": "AAAAAAGSzyTuVWI1gRo="
-								},
-								"reference": {
-									"$ref": "AAAAAAGSzv4atF3+Qj8="
-								},
-								"cardinality": "0..*"
-							}
-						}
-					],
-					"columns": [
-						{
-							"_type": "ERDColumn",
-							"_id": "AAAAAAGSz6CNMmQLVEc=",
-							"_parent": {
-								"$ref": "AAAAAAGSzwdZlV8a54I="
-							},
-							"name": "id",
-							"type": "INTEGER",
-							"length": 0,
-							"primaryKey": true
-						},
-						{
-							"_type": "ERDColumn",
-							"_id": "AAAAAAGSzwen/F81XbQ=",
-							"_parent": {
-								"$ref": "AAAAAAGSzwdZlV8a54I="
-							},
-							"name": "costo",
-							"type": "DECIMAL",
-							"length": "10,2",
-							"nullable": true
-						},
-						{
-							"_type": "ERDColumn",
-							"_id": "AAAAAAGSzwd5118nSKo=",
-							"_parent": {
-								"$ref": "AAAAAAGSzwdZlV8a54I="
-							},
-							"name": "cantidad",
-							"type": "INTEGER",
-							"length": 0,
-							"nullable": true
-						},
-						{
-							"_type": "ERDColumn",
-							"_id": "AAAAAAGSzwfXEl8+j4s=",
-							"_parent": {
-								"$ref": "AAAAAAGSzwdZlV8a54I="
-							},
-							"name": "id_ingrediente",
-							"type": "INTEGER",
-							"length": 0,
-							"foreignKey": true
-						},
-						{
-							"_type": "ERDColumn",
-							"_id": "AAAAAAGSzweSmV8uFgM=",
-							"_parent": {
-								"$ref": "AAAAAAGSzwdZlV8a54I="
-							},
-							"name": "id_presentacion",
-							"type": "INTEGER",
-							"length": 0,
-							"foreignKey": true
-						}
-					]
-				},
-				{
-					"_type": "ERDEntity",
-					"_id": "AAAAAAGSzwiv919HEOc=",
-					"_parent": {
-						"$ref": "AAAAAAGSzumoVltvXZU="
-					},
-					"name": "Presentaciones",
-					"columns": [
-						{
-							"_type": "ERDColumn",
-							"_id": "AAAAAAGSzwjGMV9VURs=",
-							"_parent": {
-								"$ref": "AAAAAAGSzwiv919HEOc="
-							},
-							"name": "id",
-							"type": "INTEGER",
-							"length": 0,
-							"primaryKey": true
-						},
-						{
-							"_type": "ERDColumn",
-							"_id": "AAAAAAGSzwjL+F9ckIU=",
-							"_parent": {
-								"$ref": "AAAAAAGSzwiv919HEOc="
-							},
-							"name": "nombre",
-							"type": "VARCHAR",
-							"length": "100",
-							"nullable": true,
-							"unique": true
-						}
-					]
-				},
-				{
-					"_type": "ERDEntity",
-					"_id": "AAAAAAGS3hCCd9beWfA=",
-					"_parent": {
-						"$ref": "AAAAAAGSzumoVltvXZU="
-					},
-					"name": "Fabricación",
-					"columns": [
-						{
-							"_type": "ERDColumn",
-							"_id": "AAAAAAGS3hDPjNbxhEg=",
-							"_parent": {
-								"$ref": "AAAAAAGS3hCCd9beWfA="
-							},
-							"name": "Column1"
-						}
-					]
-				},
-				{
-					"_type": "ERDEntity",
 					"_id": "AAAAAAGS3iQ2vNcUBxc=",
 					"_parent": {
 						"$ref": "AAAAAAGSzumoVltvXZU="
@@ -5291,7 +5089,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGS3iQ2vNcUBxc="
 							},
-							"name": "id_transaccion",
+							"name": "id",
 							"type": "INTEGER",
 							"length": 0,
 							"primaryKey": true
@@ -5424,7 +5222,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGS3ih6vtdpQ8U="
 							},
-							"name": "id_metodo_pago",
+							"name": "id",
 							"type": "INTEGER",
 							"length": 0,
 							"primaryKey": true
